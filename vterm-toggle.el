@@ -191,7 +191,7 @@ Optional argument ARGS optional args."
               (when (and (not (equal vterm-dir dir))
                          (equal vterm-host cur-host)
                          make-cd
-                         (vterm-toggle--accept-cmd-p))
+                         (vterm-accept-cmd-p))
                 (vterm-toggle-insert-cd)))
             (run-hooks 'vterm-toggle-show-hook))
           (when vterm-toggle-fullscreen-p
